@@ -16,3 +16,10 @@ Collecting coins will increase the score.
 UI :-
 
 Implemented Basic UI like Game Over, Win, Score, Lobby,Timer,Pause UI for the game. Implemented Play,Restart,Quit,Home & Resume Buttons.
+
+Gameplay Video :-
+
+
+
+https://github.com/Zeus007-123/LightningLabyrinth/assets/85187332/9249713b-aaf7-40c4-b97f-b00f5c395a97
+
