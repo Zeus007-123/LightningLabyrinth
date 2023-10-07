@@ -8,16 +8,19 @@ public class GameOverController : MonoBehaviour
 
     [SerializeField] private Button buttonRestart;
     [SerializeField] private Button buttonHome;
-    
+
+    public void GameOver()
+    {
+        GameOverScreen.SetActive(true);
+    }
+
     public void RestartLevel()
     {
-        Debug.Log(" Reloading Active Scene ");
         //SoundManager.Instance.Play(Sounds.buttonClick);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void GoHome()
     {
-        Debug.Log(" Going to Home Lobby Screen/Scene ");
         //SoundManager.Instance.Play(Sounds.buttonClick);
         SceneManager.LoadScene(0);
     }

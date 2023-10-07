@@ -15,10 +15,14 @@ public class LevelCompleteController : MonoBehaviour
 
         if (playerController != null)
         {
-            Debug.Log(" Level Finished by the Player ");
-            LevelCompleteScreen.SetActive(true);
+            CameraShake.Instance.ShakeCamera();
+            LevelComplete();
         }
 
+    }
+    public void LevelComplete()
+    {
+        LevelCompleteScreen.SetActive(true);
     }
     public void Restart_Scene()
     {
