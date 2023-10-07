@@ -52,10 +52,12 @@ public class PlayerController : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         PauseMenuScreen.SetActive(false);
     }
     public void GoHome()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(0);
     }
 

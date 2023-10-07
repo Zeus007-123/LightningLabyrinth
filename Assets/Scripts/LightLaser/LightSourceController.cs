@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class LightSourceController : MonoBehaviour
 {
-    public float minActivationTime = 2.0f;
-    public float maxActivationTime = 5.0f;
+    [SerializeField] private float minActivationTime = 2.0f;
+    [SerializeField] private float maxActivationTime = 5.0f;
 
     private bool isActive = false;
     private float nextActivationTime;

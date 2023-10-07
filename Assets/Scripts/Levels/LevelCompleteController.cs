@@ -16,6 +16,7 @@ public class LevelCompleteController : MonoBehaviour
         if (playerController != null)
         {
             CameraShake.Instance.ShakeCamera();
+            SoundManager.Instance.Play(Sounds.LevelWin);
             LevelComplete();
         }
 
@@ -26,10 +27,12 @@ public class LevelCompleteController : MonoBehaviour
     }
     public void Restart_Scene()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void GoHome()
     {
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(0);
     }
 }

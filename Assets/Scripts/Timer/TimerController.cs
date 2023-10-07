@@ -3,10 +3,11 @@ using TMPro;
 
 public class TimerController : MonoBehaviour
 {
-    public float initialTime = 25.0f;
+    [SerializeField] private float initialTime = 25.0f;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private GameObject exit;
+
     private float currentTime;
-    public TextMeshProUGUI timerText;
-    public GameObject exit;
     private bool levelComplete;
 
     public LevelCompleteController levelCompleteController;
@@ -37,8 +38,8 @@ public class TimerController : MonoBehaviour
 
             if (Vector2.Distance(transform.position, exit.transform.position) < 1.0f)
             {
-                levelComplete = true;
                 CameraShake.Instance.ShakeCamera();
+                levelComplete = true;
                 levelCompleteController.LevelComplete();
             }
         }

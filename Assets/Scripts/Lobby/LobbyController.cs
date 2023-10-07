@@ -9,12 +9,12 @@ public class LobbyController : MonoBehaviour
 
     public void PlayGame()
     {
-        //SoundManager.Instance.Play(Sounds.buttonClick);
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(1);
     }
     public void QuitGame()
     {
-        //SoundManager.Instance.Play(Sounds.buttonClick);
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         Application.Quit();
     }
 }

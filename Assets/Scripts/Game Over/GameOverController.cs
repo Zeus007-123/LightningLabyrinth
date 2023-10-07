@@ -11,17 +11,18 @@ public class GameOverController : MonoBehaviour
 
     public void GameOver()
     {
+        SoundManager.Instance.Play(Sounds.DeathMusic);
         GameOverScreen.SetActive(true);
     }
 
     public void RestartLevel()
     {
-        //SoundManager.Instance.Play(Sounds.buttonClick);
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void GoHome()
     {
-        //SoundManager.Instance.Play(Sounds.buttonClick);
+        SoundManager.Instance.Play(Sounds.ButtonClick);
         SceneManager.LoadScene(0);
     }
 }
