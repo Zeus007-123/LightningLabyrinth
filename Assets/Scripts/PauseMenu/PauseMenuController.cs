@@ -13,8 +13,9 @@ public class PauseMenuController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Time.timeScale = 0f;
-            PauseMenuScreen.SetActive(true);
+            bool isPaused = Time.timeScale == 0f;
+            Time.timeScale = isPaused ? 1f : 0f;
+            PauseMenuScreen.SetActive(!isPaused);
         }
     }
 
