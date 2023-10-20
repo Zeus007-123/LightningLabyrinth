@@ -17,6 +17,8 @@ UI :-
 
 Implemented Basic UI like Game Over, Win, Score, Lobby,Timer,Pause UI for the game. Implemented Play,Restart,Quit,Home & Resume Buttons.
 
+Playable Link :- https://akgamesarena.itch.io/lightning-labyrinth
+
 Gameplay Video :-
 
 
